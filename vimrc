@@ -3,6 +3,7 @@ set showmatch
 set mouse=a
 set autoindent
 set colorcolumn=80
+set cursorline
 syntax on
 filetype plugin indent on
 set hidden			"mantiene il buffer anche dopo aver salvato 
