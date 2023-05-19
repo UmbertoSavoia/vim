@@ -1,3 +1,4 @@
+" Make sure you install vim-plug
 call plug#begin()
 Plug 'jacoborus/tender.vim'
 Plug 'morhetz/gruvbox'
@@ -8,7 +9,7 @@ set showmatch
 set mouse=a
 set colorcolumn=80
 set cursorline
-set hidden			"mantiene il buffer anche dopo aver salvato
+set hidden			" keeps the buffer even after saving
 set autoindent
 set tabstop=4
 set shiftwidth=4
