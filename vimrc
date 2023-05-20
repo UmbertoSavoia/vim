@@ -5,6 +5,7 @@ Plug 'morhetz/gruvbox'
 call plug#end()
 
 set number
+set relativenumber
 set showmatch
 set mouse=a
 set colorcolumn=80
