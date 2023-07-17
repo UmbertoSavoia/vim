@@ -2,6 +2,7 @@
 call plug#begin()
 Plug 'jacoborus/tender.vim'
 Plug 'morhetz/gruvbox'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 set number
@@ -22,6 +23,9 @@ filetype plugin indent on
 set background=dark    " Setting dark mode for gruvbox
 colorscheme gruvbox
 "colorscheme tender
+
+" gitgutter
+set updatetime=300
 
 " Macro
 nnoremap <F5> :!gcc -Wall -Wextra -Werror %:t -o %:r.out && ./%:r.out<enter>
