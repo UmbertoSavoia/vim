@@ -4,6 +4,7 @@ Plug 'jacoborus/tender.vim'
 Plug 'morhetz/gruvbox'
 Plug 'airblade/vim-gitgutter'
 Plug 'preservim/nerdtree'
+Plug 'dense-analysis/ale'
 call plug#end()
 
 set number
