@@ -4,7 +4,8 @@ Plug 'jacoborus/tender.vim'
 Plug 'morhetz/gruvbox'
 Plug 'airblade/vim-gitgutter'
 Plug 'preservim/nerdtree'
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
+Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 set number
