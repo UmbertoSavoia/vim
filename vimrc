@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'jacoborus/tender.vim'
 Plug 'morhetz/gruvbox'
 Plug 'airblade/vim-gitgutter'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 set number
