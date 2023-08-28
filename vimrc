@@ -30,6 +30,14 @@ colorscheme gruvbox
 " gitgutter
 set updatetime=300
 
+" solve problem for paste with tmux
+if &term =~ "screen"
+    let &t_BE = "\e[?2004h"
+    let &t_BD = "\e[?2004l"
+    exec "set t_PS=\e[200~"
+    exec "set t_PE=\e[201~"
+endif
+
 " Macro
 nnoremap <F5> :!gcc -Wall -Wextra -Werror %:t -o %:r.out && ./%:r.out<enter>
 nmap <F6> :NERDTreeToggle<CR>
