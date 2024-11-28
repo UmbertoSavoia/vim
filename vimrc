@@ -8,6 +8,23 @@ Plug 'preservim/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
+" netwr
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4 " open in previous window
+let g:netrw_altv = 1
+let g:netrw_winsize = 25 "The following sets the width to 25% of the page
+
+" OS copy and paste
+if executable('clip.exe')
+  map <leader>p :r !powershell.exe Get-Clipboard<cr>
+  " vnoremap <silent> <leader>y :'<,'>:w !sh -c 'cat \| clip.exe'<cr><cr>
+  vnoremap <silent> <leader>y :w !sh -c 'cat \| clip.exe'<cr><cr>
+else
+  map <leader>p "+p
+  vnoremap <leader>y "+y
+endif
+
 set number
 set relativenumber
 set showmatch
