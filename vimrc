@@ -25,8 +25,10 @@ else
   vnoremap <leader>y "+y
 endif
 
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
+set list
 set number
-set relativenumber
+"set relativenumber
 set showmatch
 set mouse=a
 set colorcolumn=80
